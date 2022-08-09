@@ -1,0 +1,25 @@
+.container {
+  background-color: aqua;
+  padding-left: 25%;
+}
+
+.heading {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.labels {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.input {
+  width: 40%;
+  height: 50%;
+}
+
+#result {
+  font-size: 2rem;
+  font-weight: 400;
+  color: red;
+}

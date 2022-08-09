@@ -1,0 +1,66 @@
+.about-container {
+  padding: 6%;
+}
+
+.intro-heading {
+  font-size: 10rem;
+  font-weight: 600;
+}
+
+.owner-heading {
+  font-size: 6rem;
+  font-weight: 550;
+}
+
+.owner-image {
+  height: 800%;
+  width: 80%;
+  padding-left: 25%;
+}
+
+#first {
+  margin: 0 auto;
+  width: 30%;
+  float: left;
+}
+#second {
+  font-size: 2rem;
+  width: 70%;
+  float: left;
+}
+.about {
+  text-align: justify;
+  display: block;
+}
+.emptyspace {
+  padding-top: 18%;
+}
+
+@media only screen and (max-width: 550px) {
+  #first,
+  #second {
+    width: 100%;
+  }
+  .intro-heading {
+    font-size: 5rem;
+    font-weight: 600;
+  }
+  .owner-heading {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .name {
+    align-items: center;
+    padding-top: 10%;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .heading-achievement {
+    font-size: 2rem;
+  }
+  .emptyspace {
+    padding-top: 20%;
+  }
+}

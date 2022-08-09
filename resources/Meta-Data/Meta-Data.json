@@ -1,0 +1,27 @@
+{
+  "ownerMeta": {
+    "ownerName": "Ronnie Sharma",
+    "AboutOwner": "Ronnie Coleman is a retired IFBB professional Open division bodybuilder and police officer. He’s most known for winning the prestigious Mr. Olympia title eight times",
+    "Achievements": {
+      "Achievement1": "National Champ",
+      "Achievement2": "National Champ2"
+    }
+  },
+  "trainerMeta": {
+    "trainerId-150": {
+      "trainerName": "Lat PullDoen",
+      "AboutTrainer": " Champ is a retired IFBB professional Open division bodybuilder and police officer.",
+      "TrainerAchievements": {
+        "Achievement1": "state Champ",
+        "Achievement2": "Natsteional Champ2"
+      }
+    },
+    "trainerId-250": {
+      "trainerName": "Bench Press",
+      "AboutTrainer": "Bro Champ is a retired IFBB professional Open division bodybuilder and police officer.",
+      "TrainerAchievements": {
+        "Achievement1": "dist Champ"
+      }
+    }
+  }
+}
