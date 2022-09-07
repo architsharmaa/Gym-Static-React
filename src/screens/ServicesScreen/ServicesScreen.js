@@ -1,18 +1,22 @@
 import "./ServicesScreen.css";
-import img from "../../../resources/media/owner.png";
+import Card from "./Card";
+import "./ServicesScreen.scss";
+import Subscription from "../../../resources/Meta-Data/Subscription.json";
 
-const ServicesScreen = () => {
+function ServicesScreen() {
   return (
-    <div className="card" id="service">
-      <img src={img} alt="Avatar" style={{ width: 100 }} />
-      <div className="container">
-        <h4>
-          <b>John Doe</b>
-        </h4>
-        <p>Architect Engineer</p>
-      </div>
+    <div className="wrapper">
+      {Object.values(Subscription).map((item, index) => (
+        <Card
+          key={index}
+          img={item.img}
+          title={item.title}
+          description={item.description}
+          price={item.Category}
+        />
+      ))}
     </div>
   );
-};
+}
 
 export default ServicesScreen;

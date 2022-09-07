@@ -1,0 +1,32 @@
+{
+  "service1": {
+    "title": "Premium Pack",
+    "Category": "Elite Class",
+    "description": "This pack includes acess to premium gym timmings and personal trainng from experts",
+    "img": "../../../resources/media/1.png"
+  },
+  "service2": {
+    "title": "Super Pack",
+    "Category": "Elite Class",
+    "description": "This pack includes acess to premium gym timmings",
+    "img": "../../../resources/media/2.jpg"
+  },
+  "service3": {
+    "title": "Attention Major",
+    "Category": "Super Class",
+    "description": "This pack includes atteention with world class personal traings",
+    "img": "../../../resources/media/3.jpg"
+  },
+  "service4": {
+    "title": "Super Value",
+    "Category": "Super Class",
+    "description": "This includes access to premium gym equipments and spots",
+    "img": "../../../resources/media/4.jpg"
+  },
+  "service5": {
+    "title": "Money Saver",
+    "Category": "Class",
+    "description": "This pack includes basic access to gym quipments",
+    "img": "../../../resources/media/5.jpg"
+  }
+}

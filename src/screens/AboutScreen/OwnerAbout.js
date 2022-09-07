@@ -4,8 +4,9 @@ import MetaData from "../../../resources/Meta-Data/Meta-Data.json";
 
 const OwnerAbout = () => {
   return (
-    <div>
+    <div className="parent-div">
       <span className="owner-heading">Owner</span>
+      <hr />
       <div className="owner-coantiner">
         <div id="first">
           {" "}
@@ -18,6 +19,7 @@ const OwnerAbout = () => {
         <div id="second">
           {" "}
           <h1 className="name">{MetaData.ownerMeta.ownerName}</h1>
+          <hr />
           <span className="about">{MetaData.ownerMeta.AboutOwner}</span>
           <h2 className="heading-achievement">Achievements</h2>
           <span>

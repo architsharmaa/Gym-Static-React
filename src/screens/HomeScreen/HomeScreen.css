@@ -23,7 +23,7 @@
 }
 
 .greeting-text {
-  font-size: 7rem;
+  font-size: 4.37rem;
   font-weight: 700;
 }
 * {
@@ -84,7 +84,7 @@
 
 @media (max-width: 520px) {
   .greeting-text {
-    font-size: 5rem;
+    font-size: 3.2rem;
     font-weight: 500;
   }
 

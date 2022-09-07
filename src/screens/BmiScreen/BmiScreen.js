@@ -1,59 +1,58 @@
 import "./BmiScreen.css";
-const BmiScreen = () => {
-  window.onload = () => {
-    let button = document.querySelector("#btn");
+import { useState } from "react";
 
-    // Function for calculating BMI
-    button.addEventListener("click", calculateBMI);
-  };
+const BmiScreen = () => {
+  const [result, setResult] = useState("");
 
   function calculateBMI() {
-    /* Getting input from user into height variable.
-    Input is string so typecasting is necessary. */
     let height = parseInt(document.querySelector("#height").value);
 
-    /* Getting input from user into weight variable. 
-    Input is string so typecasting is necessary.*/
     let weight = parseInt(document.querySelector("#weight").value);
+    console.log(height);
+    console.log(weight);
 
-    let result = document.querySelector("#result");
-
-    // Checking the user providing a proper
-    // value or not
-    if (height === "" || isNaN(height))
-      result.innerHTML = "Provide a valid Height!";
+    if (height === "" || isNaN(height)) setResult("Provide a valid Height!");
     else if (weight === "" || isNaN(weight))
-      result.innerHTML = "Provide a valid Weight!";
+      setResult("Provide a valid Weight!");
     // If both input is valid, calculate the bmi
     else {
       // Fixing upto 2 decimal places
       let bmi = (weight / ((height * height) / 10000)).toFixed(2);
 
       // Dividing as per the bmi conditions
-      if (bmi < 18.6) result.innerHTML = `Under Weight : <span>${bmi}</span>`;
-      else if (bmi >= 18.6 && bmi < 24.9)
-        result.innerHTML = `Normal : <span>${bmi}</span>`;
-      else result.innerHTML = `Over Weight : <span>${bmi}</span>`;
+      if (bmi < 18.6) setResult("Under Weight : " + bmi);
+      else if (bmi >= 18.6 && bmi < 24.9) setResult("Normal : " + bmi);
+      else setResult("Over Weight : " + bmi);
     }
   }
   return (
-    <div id="bmi" className="container">
-      <h1 className="heading">BMI Calculator</h1>
+    <div id="bmi" className="bmi-container">
+      <h1 className="bmi-heading">BMI Calculator</h1>
+      <hr />
 
-      <p className="labels">Height (in cm)</p>
+      <span className="theory">
+        Body mass index (BMI) is a value derived from the mass (weight) and
+        height of a person. The BMI is defined as the body mass divided by the
+        square of the body height, and is expressed in units of kg/m2, resulting
+        from mass in kilograms and height in metres.
+      </span>
+      <br />
+      <p className="bmi-labels">Height (in cm)</p>
 
-      <input type="text" id="height" className="input" />
+      <input type="text" id="height" className="bmi-input" />
 
-      <p className="labels">Weight (in kg)</p>
+      <p className="bmi-labels">Weight (in kg)</p>
 
-      <input type="text" id="weight" className="input" />
+      <input type="text" id="weight" className="bmi-input" />
 
       <br />
       <br />
+      {result.length > 0 && <div className="result">{result}</div>}
+      <button id="btn" onClick={calculateBMI}>
+        Calculate
+      </button>
 
-      <button id="btn">Calculate</button>
-
-      <div id="result"></div>
+      <div id="bmi-result"></div>
     </div>
   );
 };

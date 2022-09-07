@@ -9,7 +9,7 @@ import {
   FaYoutubeSquare,
 } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../../resources/media/logo.png";
+import Logo from "../../../resources/media/logo.png";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);

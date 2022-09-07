@@ -1,14 +1,28 @@
 .about-container {
-  padding: 6%;
+  padding: 3%;
+  overflow: auto;
+  background-color: rgb(49, 47, 47);
+  color: aliceblue;
+  margin-top: 1%;
 }
 
 .intro-heading {
-  font-size: 10rem;
+  font-size: 4.25rem;
   font-weight: 600;
+  text-align: center;
+}
+.hrTest {
+  border: none;
+  height: 10px;
+  height: 5px;
+  width: 150px;
+  background-color: #eb3941;
+  margin-bottom: 2%;
+  margin: auto;
 }
 
 .owner-heading {
-  font-size: 6rem;
+  font-size: 3.75rem;
   font-weight: 550;
 }
 
@@ -24,7 +38,7 @@
   float: left;
 }
 #second {
-  font-size: 2rem;
+  font-size: 1.25rem;
   width: 70%;
   float: left;
 }
@@ -35,6 +49,22 @@
 .emptyspace {
   padding-top: 18%;
 }
+.intro-about {
+  color: aliceblue;
+  margin-top: 5%s;
+  padding-right: 40%;
+}
+#btn {
+  background-color: #eb3941;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 2%;
+}
 
 @media only screen and (max-width: 550px) {
   #first,
@@ -42,11 +72,11 @@
     width: 100%;
   }
   .intro-heading {
-    font-size: 5rem;
+    font-size: 3.1rem;
     font-weight: 600;
   }
   .owner-heading {
-    font-size: 3rem;
+    font-size: 1.87rem;
     font-weight: 600;
   }
   .name {
@@ -54,11 +84,11 @@
     padding-top: 10%;
     padding-left: 25%;
     padding-right: 25%;
-    font-size: 2.5rem;
+    font-size: 1.56rem;
     font-weight: 600;
   }
   .heading-achievement {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
   .emptyspace {
     padding-top: 20%;
